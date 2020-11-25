@@ -1,0 +1,12 @@
+.section-4 > h2 {
+    @extend %font-h;
+    margin-top: 54px;
+    margin-bottom: 14px;
+    color: $oscuro;
+}
+
+.section-4 > img {
+    display: flex;
+    width: 100%;
+    height: 4.5%;
+}

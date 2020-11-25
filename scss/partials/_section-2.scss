@@ -1,0 +1,18 @@
+.section-2 {
+    width: 100%;
+    margin-top: 37px;
+    @extend %background;
+    height: 1203.5px;
+
+    .h2-section-2{
+        @extend %font-h;
+        color: $claro;
+        padding: 64px 0px 21px 0px;
+    }
+}
+
+iframe {
+    margin-left: $margin-left;
+    margin-bottom: 11px;
+    width: 90%;
+}

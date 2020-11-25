@@ -1,0 +1,112 @@
+/*Header*/  
+.header {
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+    padding: 10px 5%;
+    .logo {
+     float: left;
+     width: 24px;
+     height: 24px; 
+    }   
+    .nav {  
+        float: right;
+    }
+}
+
+/*Nav*/
+.nav {
+    ul {
+        position: absolute;
+        top: 44px;
+        right: 0;
+        width: 100%;
+        opacity: 0;
+        background-color:#0000EC;      
+        pointer-events: none;
+    }
+    li {
+    &:first-child {
+        margin-top: 16px;
+    }
+       list-style: none;
+        a{  
+            padding: 0px 1.1% 24px 5%;
+            @extend %font-nav;
+            color:$claro;
+            display: block;
+            &:hover {
+            color: black;
+            
+             }
+        }
+    }
+}
+
+input[type="checkbox"] {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0; 
+}
+
+.nav span {
+    display: block;
+    width: 25px;
+    height: 2.5px;
+    margin-bottom: 6.5px;
+    position: relative;
+    background-color: black;
+    z-index: 1;
+    transform-origin: 3px 0px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.nav span:nth-last-child(2){
+  transform-origin: 0%  100%;
+}
+
+input[type="checkbox"]:checked~ul {
+        opacity: 1;
+        height: auto;
+}
+input[type="checkbox"]:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(2px, 1px);
+}
+input[type="checkbox"]:checked~span:nth-last-child(3) {
+    opacity: 0;
+}
+input[type="checkbox"]:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(1px, 0px);
+}
+
+// Media Query Desktop 
+
+@include desktop{
+    .nav {
+        input,span{
+            display: none;
+        }
+        ul {
+            pointer-events: all;
+            position: static;
+            background-color: transparent;
+            opacity: 1;
+        li { 
+            padding: 0px 10px;
+            display: inline-block;
+            a { 
+                padding:0;
+                line-height: 1;
+                color: $oscuro; 
+                &:hover{
+                    text-decoration: line-through;
+                    color: #00F3BB;
+                }
+                }
+            }
+        }
+    }
+}

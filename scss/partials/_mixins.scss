@@ -1,0 +1,30 @@
+@mixin tablets {
+    @media screen and (max-width: 768px) {@content;}
+  }
+
+  @mixin desktop {
+    @media screen and (min-width: 1000px) {@content;}
+  }
+
+  @mixin smarthphone {
+    @media screen and (min-width: 480px) {@content;}
+  }
+
+  @mixin button ($padding){ 
+    font-family: $ibmplexmono;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: $oscuro;
+    background-color: #00F3BB ;
+    line-height: 22px;
+    padding: $padding;
+    margin-left: $margin-left;
+    &:hover {
+        transition: all 0.5s;
+        background: rgb(0, 240, 184);
+        background: linear-gradient(90deg, rgba(0, 240, 184, 1) 6%, rgba(0, 0, 254, 1) 100%);
+        color: $claro;
+        cursor: pointer;
+    }   
+}

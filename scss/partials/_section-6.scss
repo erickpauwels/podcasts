@@ -1,0 +1,23 @@
+.section-6 {
+    @extend %background;
+    height: 341px;
+    margin-top: 42px;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    
+    h2 {
+        padding-top: 64px;
+        @extend %font-h;
+        color: $claro;
+        text-align: center;
+        margin-bottom: 36px;       
+    }
+   
+ }
+
+ .button{
+    text-align: center;
+    display: block;
+    @include button(13px 43px);
+    margin-right: 5%;
+    }
+ 

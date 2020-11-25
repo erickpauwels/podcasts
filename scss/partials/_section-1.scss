@@ -1,0 +1,34 @@
+/*section-1 */
+.section-1 {
+    h1 {
+    @extend %font-h;
+    width: 80%;
+    margin-top: 29px;
+    color: $oscuro;
+     }
+
+    #world {
+        text-decoration-line: line-through;
+        margin-left: 10px;
+    }
+
+    #dot {
+        color: $oscuro;
+    }
+}
+
+/*maintext*/
+
+.section-1 > p {
+    @extend %font-p;
+    margin-top: 16px;
+    margin-bottom: 49px;
+}
+
+/*boton*/
+.button{
+    text-align: center;
+    display: block;
+    @include button(13px 96px);
+    margin-right: 5%;
+    }

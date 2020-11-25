@@ -1,0 +1,21 @@
+.section-5 > h2 {
+      @extend %font-h;
+      margin-top: 48px;
+      margin-bottom: 37px;
+      color: $oscuro;
+}
+.section-5 div{
+      width: 100%;
+      height: 2.4%;  
+      margin-top: 37px;       
+      img {
+      margin-left: 108px;
+      margin-bottom: 13px;
+      width: 104px;
+      height: 104px;
+      }
+       h3 {
+      margin-top: 13px;
+      @extend %font-h3;
+  }
+}
