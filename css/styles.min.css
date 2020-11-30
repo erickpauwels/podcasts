@@ -85,7 +85,7 @@
   width: 100%;
   opacity: 0;
   background-color: #0000EC;
-  pointer-events: none;
+  overflow: hidden;
 }
 
 .nav li {
