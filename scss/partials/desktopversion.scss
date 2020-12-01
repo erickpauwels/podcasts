@@ -1,0 +1,28 @@
+// Media Query Desktop 
+
+@include desktop{
+    .nav {
+        input,span{
+            display: none;
+        }
+        ul {
+            pointer-events: all;
+            position: static;
+            background-color: transparent;
+            opacity: 1;
+        li { 
+            padding: 0px 10px;
+            display: inline-block;
+            a { 
+                padding:0;
+                line-height: 1;
+                color: $oscuro; 
+                &:hover{
+                    text-decoration: line-through;
+                    color: #00F3BB;
+                }
+                }
+            }
+        }
+    }
+}

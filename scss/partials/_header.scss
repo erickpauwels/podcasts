@@ -85,10 +85,14 @@ input[type="checkbox"]:checked~span:nth-last-child(2) {
 // Media Query Desktop 
 
 @include desktop{
+    .header .logo {
+        width: 36px;
+        height: 36px;
+    }
     .nav {
         input,span{
             display: none;
-        }
+            }
         ul {
             pointer-events: all;
             position: static;
@@ -108,5 +112,9 @@ input[type="checkbox"]:checked~span:nth-last-child(2) {
                 }
             }
         }
+    }
+    .header {
+        height: 80px;        
+        padding: 22px 100px;  
     }
 }

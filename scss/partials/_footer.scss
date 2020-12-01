@@ -2,8 +2,11 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 24px;
+    h3{
     @extend %font-p;
     text-align: center;   
+    font-weight: 400;
+    }
     .social-icons {
         text-decoration: none;
         display: flex;

@@ -15,6 +15,9 @@
     #dot {
         color: $oscuro;
     }
+    #p-desktop {
+        display: none;
+    }
 }
 
 /*maintext*/
@@ -32,3 +35,38 @@
     @include button(13px 96px);
     margin-right: 5%;
     }
+
+    // Media Query Desktop 
+
+@include desktop{
+    .section-1{
+        h1{ 
+            margin-top: 120px;
+            font-size: 64px;
+            line-height: 84px;
+            
+        }
+        #p-desktop {
+            display: inline;
+        }
+        #p-mobile {
+            display: none;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            width: 628px;
+        }
+        #dot{
+            color:  #0000EC;
+        }
+        a{
+            
+            width: 226px;
+            height: 56px;
+            line-height: 24px;
+            font-size: 18px;
+            padding: 16px 59px;
+        }
+    }
+}

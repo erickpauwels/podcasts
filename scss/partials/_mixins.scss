@@ -1,5 +1,5 @@
 @mixin tablets {
-    @media screen and (max-width: 768px) {@content;}
+    @media screen and (min-width: 768px) {@content;}
   }
 
   @mixin desktop {
