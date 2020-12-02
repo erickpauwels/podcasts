@@ -41,6 +41,7 @@
 @include desktop{
     .section-1{
         h1{ 
+            margin-left: $margin-desktop;
             margin-top: 120px;
             font-size: 64px;
             line-height: 84px;
@@ -53,6 +54,8 @@
             display: none;
         }
         p{
+            margin-left: $margin-desktop;
+            margin-top: 0px;
             font-size: 16px;
             line-height: 24px;
             width: 628px;
@@ -61,7 +64,7 @@
             color:  #0000EC;
         }
         a{
-            
+            margin-left: $margin-desktop;
             width: 226px;
             height: 56px;
             line-height: 24px;

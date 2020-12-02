@@ -21,7 +21,7 @@
     font-weight: 400;
     margin-left: $margin-left;
     line-height: 42px;
-    width: 90%;
+    
 }
 
 %font-h3{
@@ -43,10 +43,11 @@
     font-size: 24px;
 }
 
-// Fondo con diagonal
+// Fondo con diagonal Mobile
 
 %background {
     background: rgb(0,0,255);
     background: linear-gradient(225deg, rgba(0,0,255,1) 0%, rgba(0,0,163,1) 100%);
     clip-path: polygon(0 2.8%, 100% 0, 100% 97.2%, 0% 100%);
  }
+

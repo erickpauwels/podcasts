@@ -1,18 +1,56 @@
 .section-2 {
     width: 100%;
-    margin-top: 37px;
     @extend %background;
-    height: 1203.5px;
+    height: 1230.5px;
 
     .h2-section-2{
         @extend %font-h;
         color: $claro;
-        padding: 64px 0px 21px 0px;
+        margin:24px 0px 21px 5%;
+        padding-top:64px;
     }
 }
 
 iframe {
-    margin-left: $margin-left;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
     margin-bottom: 11px;
     width: 90%;
+    margin-left: $margin-left;
+}
+
+@include desktop {
+    .section-2 {
+        height: 1042.6px;
+        background: rgb(0, 4, 255);
+        background: linear-gradient(225deg, rgba(0,0,255,1) 0%, rgba(0,0,163,1) 100%);
+        clip-path: polygon(0 11.8%, 100% 0, 100% 88.2%, 0% 100%);
+        padding-top: 150px;
+        .h2-section-2 {
+            font-size: 48px;
+            line-height: 62px;
+            width: 209px;
+            padding:0px;  
+            margin-left: $margin-desktop;
+            margin-top: 30px;
+            margin-bottom: 26px;  
+        }
+        .iframe-container {
+            display: flex; 
+            justify-content: center;
+            flex-flow:row wrap;
+            iframe {
+                margin:0px;
+                width: 40.6%; 
+                height: 232px; 
+            }
+            .iframe-1 , .iframe-3 {
+                margin-right: 5%;
+            }
+            .iframe-3 , .iframe-4 {
+                margin-top: 72px;
+            }
+     }
+    }
 }

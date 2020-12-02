@@ -1,4 +1,5 @@
 footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 24px;
@@ -8,6 +9,8 @@ footer {
     font-weight: 400;
     }
     .social-icons {
+        width: 90%;
+        margin-left: $margin-left;
         text-decoration: none;
         display: flex;
         margin-top: 20px;

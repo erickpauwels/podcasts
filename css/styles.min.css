@@ -4,7 +4,7 @@
   font-size: 16px;
 }
 
-.section-1 > p, .section-3 > p, footer h3 {
+.section-1 > p, .section-3 p, footer h3 {
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
   line-height: 22px;
@@ -19,10 +19,9 @@
   font-weight: 400;
   margin-left: 5%;
   line-height: 42px;
-  width: 90%;
 }
 
-.iconos h3 {
+.iconos-container h3 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
@@ -162,6 +161,7 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     position: static;
     background-color: transparent;
     opacity: 1;
+    margin-top: -6px;
   }
   .nav ul li {
     padding: 0px 10px;
@@ -234,6 +234,7 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
 
 @media screen and (min-width: 1000px) {
   .section-1 h1 {
+    margin-left: 13.9%;
     margin-top: 120px;
     font-size: 64px;
     line-height: 84px;
@@ -245,6 +246,8 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     display: none;
   }
   .section-1 p {
+    margin-left: 13.9%;
+    margin-top: 0px;
     font-size: 16px;
     line-height: 24px;
     width: 628px;
@@ -253,6 +256,7 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     color: #0000EC;
   }
   .section-1 a {
+    margin-left: 13.9%;
     width: 226px;
     height: 56px;
     line-height: 24px;
@@ -263,19 +267,57 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
 
 .section-2 {
   width: 100%;
-  margin-top: 37px;
-  height: 1203.5px;
+  height: 1230.5px;
 }
 
 .section-2 .h2-section-2 {
   color: #FFFFFF;
-  padding: 64px 0px 21px 0px;
+  margin: 24px 0px 21px 5%;
+  padding-top: 64px;
 }
 
 iframe {
-  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 11px;
   width: 90%;
+  margin-left: 5%;
+}
+
+@media screen and (min-width: 1000px) {
+  .section-2 {
+    height: 1042.6px;
+    background: #0004ff;
+    background: linear-gradient(225deg, blue 0%, #0000a3 100%);
+    clip-path: polygon(0 11.8%, 100% 0, 100% 88.2%, 0% 100%);
+    padding-top: 150px;
+  }
+  .section-2 .h2-section-2 {
+    font-size: 48px;
+    line-height: 62px;
+    width: 209px;
+    padding: 0px;
+    margin-left: 13.9%;
+    margin-top: 30px;
+    margin-bottom: 26px;
+  }
+  .section-2 .iframe-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .section-2 .iframe-container iframe {
+    margin: 0px;
+    width: 40.6%;
+    height: 232px;
+  }
+  .section-2 .iframe-container .iframe-1, .section-2 .iframe-container .iframe-3 {
+    margin-right: 5%;
+  }
+  .section-2 .iframe-container .iframe-3, .section-2 .iframe-container .iframe-4 {
+    margin-top: 72px;
+  }
 }
 
 .section-3 {
@@ -286,20 +328,52 @@ iframe {
   position: relative;
   width: 100%;
   height: 9.5%;
-  margin-top: -70px;
+  margin-top: -95px;
   z-index: 1;
   overflow: hidden;
 }
 
 .h2-section-3 {
   margin-top: 27px;
-  width: 90%;
-  height: 84px;
   color: #060A24;
+  width: 90%;
 }
 
-.section-3 > p {
+.section-3 p {
   margin-top: 12px;
+}
+
+@media screen and (min-width: 1000px) {
+  .section-3 {
+    display: flex;
+    flex-direction: row;
+  }
+  .text-section-3 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 38.2%;
+  }
+  .text-section-3 h2 {
+    margin: 0;
+    margin-top: 20 px;
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .text-section-3 p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .section-3 img {
+    margin-top: -168px;
+    margin-right: 62.4px;
+    margin-left: 13.9%;
+    width: 457px;
+    height: 660px;
+  }
 }
 
 .section-4 > h2 {
@@ -308,10 +382,30 @@ iframe {
   color: #060A24;
 }
 
-.section-4 > img {
+.img-section-4 {
   display: flex;
+  flex-flow: column wrap;
+}
+
+.img-section-4 img {
   width: 100%;
   height: 4.5%;
+}
+
+@media screen and (min-width: 1000px) {
+  .section-4 h2 {
+    font-size: 48px;
+    line-height: 62px;
+    margin: 64px 0 36px 13.9%;
+  }
+  .section-4 .img-section-4 {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .section-4 .img-section-4 img {
+    width: 33.3%;
+    height: 9.3%;
+  }
 }
 
 .section-5 > h2 {
@@ -320,25 +414,44 @@ iframe {
   color: #060A24;
 }
 
-.section-5 div {
-  width: 100%;
-  height: 2.4%;
-  margin-top: 37px;
-}
-
-.iconos {
-  margin: 0;
+.iconos-container {
+  margin: 24px 0px 0px 0px;
   display: flex;
-  width: 100%;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.iconos h3 {
-  margin: 0;
+.iconos-container .iconos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.iconos-container h3 {
   margin-top: 13px;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 36px;
+}
+
+@media screen and (min-width: 1000px) {
+  .section-5 {
+    width: 100%;
+  }
+  .section-5 h2 {
+    font-size: 48px;
+    line-height: 62px;
+    margin-left: 13.9%;
+    margin-top: 64px;
+  }
+  .section-5 .iconos-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 13.9%;
+  }
+  .section-5 .iconos-container .iconos {
+    width: 260px;
+  }
 }
 
 .section-6 {
@@ -378,6 +491,7 @@ iframe {
 }
 
 footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 24px;
@@ -389,6 +503,8 @@ footer h3 {
 }
 
 footer .social-icons {
+  width: 90%;
+  margin-left: 5%;
   text-decoration: none;
   display: flex;
   margin-top: 20px;
