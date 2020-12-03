@@ -35,10 +35,11 @@
             @extend %font-nav;
             color:$claro;
             display: block;
-            &:hover {
-            color: black;
-            
+            &:active {
+                color: #060A24;
+                text-decoration: line-through;
              }
+             
         }
     }
 }
@@ -109,6 +110,10 @@ input[type="checkbox"]:checked~span:nth-last-child(2) {
                 &:hover{
                     text-decoration: line-through;
                     color: #00F3BB;
+                }
+                &:active{
+                    color: #060A24;
+                    opacity: 56%;
                 }
                 }
             }

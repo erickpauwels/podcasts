@@ -10,18 +10,18 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 0;
       .iconos {
             width: 100%;
             display: flex;
             flex-direction: column;
             align-content: center;    
+            h3 {
+            margin-top: 13px;
+            @extend %font-h3;
+            margin-bottom: 36px; 
+            }
       }
-    h3 {
-      margin-top: 13px;
-      @extend %font-h3;
-      margin-bottom: 36px; 
-    }
-
 }
 
 //  media querys desktop version 
@@ -39,9 +39,17 @@
             width: 80%;
             display: flex;
             flex-direction:row ;
+            justify-content: center;
             margin-left: $margin-desktop;
             .iconos {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin: 0px;
                   width: 260px;
+                  h3 {
+                        margin:20px 0px 36px 0px;   
+                  }
                   }
             }
       } 

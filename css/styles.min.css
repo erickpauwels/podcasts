@@ -21,7 +21,7 @@
   line-height: 42px;
 }
 
-.iconos-container h3 {
+.iconos-container .iconos h3 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
@@ -56,6 +56,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*Header*/
@@ -101,8 +102,9 @@
   display: block;
 }
 
-.nav li a:hover {
-  color: black;
+.nav li a:active {
+  color: #060A24;
+  text-decoration: line-through;
 }
 
 input[type="checkbox"] {
@@ -175,6 +177,10 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   .nav ul li a:hover {
     text-decoration: line-through;
     color: #00F3BB;
+  }
+  .nav ul li a:active {
+    color: #060A24;
+    opacity: 56%;
   }
   .header {
     height: 80px;
@@ -419,6 +425,7 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
 }
 
 .iconos-container .iconos {
@@ -428,7 +435,7 @@ iframe {
   align-content: center;
 }
 
-.iconos-container h3 {
+.iconos-container .iconos h3 {
   margin-top: 13px;
   margin-bottom: 36px;
 }
@@ -447,10 +454,18 @@ iframe {
     width: 80%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-left: 13.9%;
   }
   .section-5 .iconos-container .iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
     width: 260px;
+  }
+  .section-5 .iconos-container .iconos h3 {
+    margin: 20px 0px 36px 0px;
   }
 }
 
@@ -490,6 +505,30 @@ iframe {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1000px) {
+  .section-6 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 518px;
+    clip-path: polygon(0 22.8%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .section-6 h2 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .section-6 a {
+    margin-left: 13.9%;
+    width: 345px;
+    height: 56px;
+    line-height: 24px;
+    font-size: 18px;
+    padding: 16px 59px;
+  }
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -517,5 +556,32 @@ footer .social-icons a {
   font-size: 16px;
   line-height: 28px;
   color: #060A24;
+}
+
+@media screen and (min-width: 1000px) {
+  footer {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 36px 6.9%;
+  }
+  footer h3 {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  footer .social-icons {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+  }
+  footer .social-icons a {
+    font-size: 18px;
+    margin-left: 36px;
+  }
 }
 /*# sourceMappingURL=styles.min.css.map */
