@@ -135,6 +135,8 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked ~ ul {
   opacity: 1;
   height: auto;
+  overflow: visible;
+  pointer-events: all;
 }
 
 input[type="checkbox"]:checked ~ span {
@@ -282,12 +284,17 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   padding-top: 64px;
 }
 
-iframe {
+.iframe-1, .iframe-2, .iframe-3, .iframe-4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 11px;
   width: 90%;
+  height: 232px;
+  border: 0;
+}
+
+.iframe-container {
   margin-left: 5%;
 }
 
@@ -362,7 +369,7 @@ iframe {
   }
   .text-section-3 h2 {
     margin: 0;
-    margin-top: 20 px;
+    margin-top: 20px;
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 62px;

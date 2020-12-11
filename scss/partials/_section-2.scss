@@ -11,13 +11,20 @@
     }
 }
 
-iframe {
+.iframe-1, .iframe-2, .iframe-3, .iframe-4 {
     display: flex;
     flex-direction:column;
     justify-content: center;
     margin-bottom: 11px;
     width: 90%;
+    height: 232px;
+    
+    border: 0;
+}
+
+.iframe-container {
     margin-left: $margin-left;
+    
 }
 
 @include desktop {
@@ -43,13 +50,15 @@ iframe {
             iframe {
                 margin:0px;
                 width: 40.6%; 
-                height: 232px; 
+                height: 232px;
             }
             .iframe-1 , .iframe-3 {
                 margin-right: 5%;
+                
             }
             .iframe-3 , .iframe-4 {
                 margin-top: 72px;
+                
             }
      }
     }

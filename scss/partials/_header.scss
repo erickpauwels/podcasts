@@ -22,7 +22,7 @@
         width: 100%;
         opacity: 0;
         background-color:#0000EC;
-        overflow: hidden;    
+        overflow: hidden;  
         pointer-events: none;       
     }
     li {
@@ -50,7 +50,7 @@ input[type="checkbox"] {
     height: 32px;
     position: absolute;
     z-index: 2;
-    opacity: 0; 
+    opacity: 0;
 }
 
 .nav span {
@@ -72,6 +72,8 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked~ul {
         opacity: 1;
         height: auto;
+        overflow:visible;
+        pointer-events: all;
 }
 input[type="checkbox"]:checked~span {
     opacity: 1;
