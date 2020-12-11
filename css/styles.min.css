@@ -63,7 +63,6 @@
 .header {
   width: 100%;
   height: 44px;
-  overflow: hidden;
   padding: 10px 5%;
 }
 
@@ -86,6 +85,7 @@
   opacity: 0;
   background-color: #0000EC;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .nav li {

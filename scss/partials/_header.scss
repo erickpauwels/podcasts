@@ -2,7 +2,6 @@
 .header {
     width: 100%;
     height: 44px;
-    overflow: hidden;
     padding: 10px 5%;
     .logo {
      float: left;
@@ -22,8 +21,9 @@
         right: 0;
         width: 100%;
         opacity: 0;
-        background-color:#0000EC;      
-        overflow: hidden;
+        background-color:#0000EC;
+        overflow: hidden;    
+        pointer-events: none;       
     }
     li {
     &:first-child {
@@ -63,6 +63,7 @@ input[type="checkbox"] {
     z-index: 1;
     transform-origin: 3px 0px;
     transition: transform 0.5s ease, opacity 0.5s ease;
+    
 }
 .nav span:nth-last-child(2){
   transform-origin: 0%  100%;
