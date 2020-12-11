@@ -16,14 +16,13 @@
     flex-direction:column;
     justify-content: center;
     margin-bottom: 11px;
-    width: 90%;
+    width: 93.1%;
     height: 232px;
-    
     border: 0;
 }
 
 .iframe-container {
-    margin-left: $margin-left;
+    margin-left: 8%;
     
 }
 
@@ -44,6 +43,7 @@
             margin-bottom: 26px;  
         }
         .iframe-container {
+            margin:0;
             display: flex; 
             justify-content: center;
             flex-flow:row wrap;

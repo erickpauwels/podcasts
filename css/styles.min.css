@@ -289,13 +289,13 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 11px;
-  width: 90%;
+  width: 93.1%;
   height: 232px;
   border: 0;
 }
 
 .iframe-container {
-  margin-left: 5%;
+  margin-left: 8%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -316,6 +316,7 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     margin-bottom: 26px;
   }
   .section-2 .iframe-container {
+    margin: 0;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
